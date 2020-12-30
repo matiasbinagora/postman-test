@@ -9,7 +9,7 @@
   },
   "servers": [
     {
-      "url": "http://petstore.swagger.io/v1"
+      "url": "https://289834ea-5776-47f8-b617-30616e772c70.mock.pstmn.io"
     }
   ],
   "paths": {
