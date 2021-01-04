@@ -92,36 +92,6 @@
             }
           }
         }
-      },
-      "delete": {
-        "summary": "Deletes a user",
-        "operationId": "deleteUser",
-        "tags": [
-          "user"
-        ],
-        "parameters": [
-    
-        ],
-        "responses": {
-          "200": {
-            "description": "User deleted",
-            "headers": {
-              "x-next": {
-                "description": "A link to the next page of responses",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/User"
-                }
-              }
-            }
-          }
-        }
       }
     }
   },
