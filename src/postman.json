@@ -1,17 +1,19 @@
 {
-  "swagger" : "2.0",
+    "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Users API",
+    "license": {
+      "name": "MIT"
+    },
   "info" : {
     "description" : "This service serves crackle api.",
     "version" : "2021-01-06T19:14:09Z",
     "title" : "Crackle Service"
   },
-  "host" : "7n3vvwtvr7.execute-api.us-west-1.amazonaws.com",
-  "basePath" : "/prod",
-  "schemes" : [ "https" ],
   "paths" : {
     "/" : {
       "get" : {
-        "consumes" : [ "application/json" ],
         "responses" : { },
         "x-amazon-apigateway-integration" : {
           "type" : "aws_proxy",
