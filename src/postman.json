@@ -94,7 +94,7 @@
         }
       },
       "delete": {
-        "summary": "delets a new user",
+        "summary": "deletes a new user",
         "operationId": "DeleteUser",
         "tags": [
           "user"
