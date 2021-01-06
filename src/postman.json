@@ -92,6 +92,36 @@
             }
           }
         }
+      },
+      "delete": {
+        "summary": "delets a new user",
+        "operationId": "DeleteUser",
+        "tags": [
+          "user"
+        ],
+        "parameters": [
+    
+        ],
+        "responses": {
+          "200": {
+            "description": "User added",
+            "headers": {
+              "x-next": {
+                "description": "A link to the next page of responses",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
