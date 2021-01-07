@@ -14,7 +14,7 @@
   "paths": {
     "/user": {
       "get": {
-        "summary": "Details about a user",
+        "summary": "Details about a userssss",
         "operationId": "listUser",
         "tags": [
           "user"
@@ -64,6 +64,36 @@
       },
        "post": {
         "summary": "Ads a new user",
+        "operationId": "addUser",
+        "tags": [
+          "user"
+        ],
+        "parameters": [
+    
+        ],
+        "responses": {
+          "200": {
+            "description": "User added",
+            "headers": {
+              "x-next": {
+                "description": "A link to the next page of responses",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          }
+        }
+      },
+       "delete": {
+        "summary": "Delete a new user",
         "operationId": "addUser",
         "tags": [
           "user"
