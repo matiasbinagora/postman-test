@@ -17,7 +17,7 @@
                   "type": "string"
                 }
               }
-            }},
+            }}},
         "x-amazon-apigateway-integration" : {
           "uri" : "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-1:126827381264:function:CrackleApiStack-CrackleApiApiHandlerF23B6078-1OXZPCS9HD6BU/invocations",
           "httpMethod" : "POST",
@@ -38,7 +38,7 @@
                   "type": "string"
                 }
               }
-            }},
+            }}},
         "x-amazon-apigateway-integration" : {
           "uri" : "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-1:126827381264:function:CrackleApiStack-CrackleApiApiHandlerF23B6078-1OXZPCS9HD6BU/invocations",
           "httpMethod" : "POST",
@@ -61,7 +61,7 @@
                   "type": "string"
                 }
               }
-            }},
+            }}},
         "x-amazon-apigateway-integration" : {
           "uri" : "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-1:126827381264:function:CrackleApiStack-CrackleApiApiHandlerF23B6078-1OXZPCS9HD6BU/invocations",
           "httpMethod" : "POST",
