@@ -1,52 +1,83 @@
 {
-  "swagger" : "2.0",
-  "info" : {
-    "description" : "This service serves crackle api.",
-    "version" : "2021-01-07T13:48:13Z",
-    "title" : "Crackle Service"
-  },
-  "host" : "7n3vvwtvr7.execute-api.us-west-1.amazonaws.com",
-  "basePath" : "/prod",
-  "schemes" : [ "https" ],
-  "paths" : {
-    "/" : {
-      "get" : {
-        "consumes" : [ "application/json" ],
-        "responses" : { },
-        "x-amazon-apigateway-integration" : {
-          "uri" : "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-1:126827381264:function:CrackleApiStack-CrackleApiApiHandlerF23B6078-1OXZPCS9HD6BU/invocations",
-          "httpMethod" : "POST",
-          "requestTemplates" : {
-            "application/json" : "{ \"statusCode\": \"200\" }"
-          },
-          "passthroughBehavior" : "when_no_match",
-          "type" : "aws_proxy"
-        }
-      },
-      "post" : {
-        "consumes" : [ "application/json" ],
-        "responses" : { },
-        "x-amazon-apigateway-integration" : {
-          "uri" : "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-1:126827381264:function:CrackleApiStack-CrackleApiApiHandlerF23B6078-1OXZPCS9HD6BU/invocations",
-          "httpMethod" : "POST",
-          "requestTemplates" : {
-            "application/json" : "{ \"statusCode\": \"200\" }"
-          },
-          "passthroughBehavior" : "when_no_match",
-          "type" : "aws_proxy"
-        }
-      }
+    "openapi": "3.0.0",
+    "info": {
+        "description": "This service serves crackle api.",
+        "version": "2021-01-07T13:48:13Z",
+        "title": "Crackle Service"
     },
-    "/{id}" : {
-      "get" : {
-        "responses" : { },
-        "x-amazon-apigateway-integration" : {
-          "uri" : "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-1:126827381264:function:CrackleApiStack-CrackleApiApiHandlerF23B6078-1OXZPCS9HD6BU/invocations",
-          "httpMethod" : "POST",
-          "passthroughBehavior" : "when_no_match",
-          "type" : "aws_proxy"
+    "paths": {
+        "/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Details about a user",
+                        "headers": {
+                            "x-next": {
+                                "description": "A link to the next page of responses",
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-amazon-apigateway-integration": {
+                    "uri": "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-1:126827381264:function:CrackleApiStack-CrackleApiApiHandlerF23B6078-1OXZPCS9HD6BU/invocations",
+                    "httpMethod": "POST",
+                    "requestTemplates": {
+                        "application/json": "{ \"statusCode\": \"200\" }"
+                    },
+                    "passthroughBehavior": "when_no_match",
+                    "type": "aws_proxy"
+                }
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Details about a user",
+                        "headers": {
+                            "x-next": {
+                                "description": "A link to the next page of responses",
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-amazon-apigateway-integration": {
+                    "uri": "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-1:126827381264:function:CrackleApiStack-CrackleApiApiHandlerF23B6078-1OXZPCS9HD6BU/invocations",
+                    "httpMethod": "POST",
+                    "requestTemplates": {
+                        "application/json": "{ \"statusCode\": \"200\" }"
+                    },
+                    "passthroughBehavior": "when_no_match",
+                    "type": "aws_proxy"
+                }
+            }
+        },
+        "/{id}": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Details about a user",
+                        "headers": {
+                            "x-next": {
+                                "description": "A link to the next page of responses",
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-amazon-apigateway-integration": {
+                    "uri": "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-1:126827381264:function:CrackleApiStack-CrackleApiApiHandlerF23B6078-1OXZPCS9HD6BU/invocations",
+                    "httpMethod": "POST",
+                    "passthroughBehavior": "when_no_match",
+                    "type": "aws_proxy"
+                }
+            }
         }
-      }
     }
-  }
 }
